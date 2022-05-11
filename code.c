@@ -1,8 +1,7 @@
 #include "WiFi.h"
 #include <PubSubClient.h>
 
-
-int ledPin = 22;
+int ledPin = 19;
 int digitalPin = 21;
 int val = 0;
 const char* ssid = "Wokwi-GUEST";
@@ -19,21 +18,22 @@ Serial.print(".");
 Serial.println(" Connected!");
 Serial.print("IP address: ");
 Serial.println(WiFi.localIP());
+
 pinMode(ledPin, OUTPUT); 
-pinMode(digitalPin, INPUT); 
+pinMode(digitalPin, INPUT);
 }
  
 void loop() {
-val = digitalRead(digitalPin); 
-Serial.print("val = "); 
-Serial.println(val); 
+val = digitalRead(digitalPin);
+
+
 if (val == 1) { 
 digitalWrite(ledPin, HIGH); 
-
+Serial.println("มีคนกำลังมา"); 
 
 }
 else {
-digitalWrite(ledPin, LOW);
+digitalWrite(ledPin, LOW); // สั่งให้ LED ดับ
 }
-delay(10000);
+delay(1000);
 }
