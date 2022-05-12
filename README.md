@@ -32,6 +32,8 @@
     <img src="img/code2.png" alt="code">
     <h3>โปสเตอร์</h3>
     <img src="img/postercompro3.png" alt="">
+    <h3>วีดีโอสาธิตการใช้งาน</h3>
+    <a href="https://drive.google.com/file/d/1Onj4AduYuwJRiIOvTeiGNu9y_-O6NPuY/view?usp=sharing">Motion Sensor LED</a>
     <h3>สมาชิก</h3>
     <p>นายณฐยศ อรุณสุริยศักดิ์ 64070142</p>
     <p>นางสาวพัณณิตา สายศร  64070197</p>
